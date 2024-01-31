@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from fastapi import FastAPI, HTTPException, Query
 from typing import List, Dict
 import pandas as pd
@@ -398,5 +397,4 @@ async def get_recomendacion_juego(user_review:int):
         return recommendations.to_dict(orient='records')
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
->>>>>>> ab937746469d15f8dd9f7be7958e0c3f93d2a3b2
     
