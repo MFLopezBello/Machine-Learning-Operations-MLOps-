@@ -197,7 +197,7 @@ async def get_recomendacion_juego(user_review:int):
         return recommendations.to_dict(orient='records')
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-=======
+
 from fastapi import FastAPI, HTTPException, Query
 from typing import List, Dict
 import pandas as pd
