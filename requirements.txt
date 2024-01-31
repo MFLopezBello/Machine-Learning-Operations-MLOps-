@@ -164,4 +164,3 @@ wcwidth==0.2.6
 zipp==3.15
 scikit-surprise
 Footer
-©
