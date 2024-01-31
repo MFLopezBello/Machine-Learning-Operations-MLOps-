@@ -16,6 +16,13 @@ csv_file_path = os.environ.get("CSV_FILE_PATH", "valor_por_defecto_ruta_csv")
 
 app = FastAPI()
 
+# URL cruda del archivo CSV en GitHub
+url = 'https://raw.githubusercontent.com/usuario/repositorio/rama/ruta/dataframe_final.csv'
+
+# Leer el archivo CSV desde la URL
+df = pd.read_csv(url)
+
+# Ahora puedes usar el DataFrame 'df' como lo harías normalmente
 df = pd.read_csv('dataframe_final.csv')
 
 
