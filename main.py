@@ -26,7 +26,7 @@ def bienvenida():
 
 
 @app.get("/PlayTimeGenre/{genero}")
-async def playtime_genre(genero: str):
+async def playtime_genre(genero: str) -> dict:
 
     # Capitalizar es para tener una formato consistente.
     genero = genero.capitalize()
@@ -55,7 +55,7 @@ async def playtime_genre(genero: str):
 
 
 @app.get("/UserForGenre/{genero}")
-async def user_for_genre(genero: str):
+async def user_for_genre(genero: str) -> dict:
 
     # Capitalizar es para tener una formato consistente.
     genero = genero.capitalize()
