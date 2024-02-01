@@ -17,7 +17,7 @@ csv_file_path = os.environ.get("CSV_FILE_PATH", "valor_por_defecto_ruta_csv")
 
 app = FastAPI()
 
-df = pd.read_csv('dataframe_final.csv')
+df = pd.read_csv('data/dataframe_final.csv')
 
 
 @app.get('/')
